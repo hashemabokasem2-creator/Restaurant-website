@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Navbarone from "./navbarone.jsx";
 
 function App() {
   return (
     <>
-    <h2>Welcome</h2>
+      <Navbarone />
     </>
   );
 }

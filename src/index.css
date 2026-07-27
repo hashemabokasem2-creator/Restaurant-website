@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #e86536;
+  --primary-hover: #d25327;
+  --title-color: #331a15;
+  --text-color: #6c6360;
+  --bg-main: #fdfaf7;
+  --bg-card: #ffffff;
+  --border-color: #e86536;
+  --font-main: "Poppins", sans-serif;
+  --font-title: "Playfair Display", serif;
+}
+
+body {
+  font-family: var(--font-main);
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+.hover-up {
+  transition: all 0.3s ease;
+}
+
+.hover-up:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hover-right {
+  transition: all 0.3s ease;
+}
+
+.hover-right:hover {
+  transform: translateX(12px);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hover-invert {
+  background-color: var(--bg-card);
+  color: var(--primary-hover);
+  border: 2px solid var(--primary-hover);
+  transition: all 0.3s ease;
+}
+
+.hover-invert:hover {
+  background-color: var(--primary-hover);
+  color: var(--bg-card);
+  border-color: var(--primary-hover);
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.hover-zoom {
+  transition: all 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+.top-navbar {
+  background-color: #074198;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  margin: 0px;
+  width: 100%;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo {
+  max-height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-icon {
+  color: #adb5bd;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #ffffff;
+}
+
+.nav-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-btn-download {
+  background-color: #387bdf;
+  color: #ffffff;
+  margin: 0px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn-download:hover {
+  background-color: #1163dd;
+  color: #ffffff;
+}
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: var(--bg-card);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main-navbar .nav-logo h2 {
+  color: var(--title-color, #2b2b2b);
+  font-size: 28px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.main-navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar .nav-links a {
+  text-decoration: none;
+  color: var(--title-color, #2b2b2b);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.main-navbar .nav-links a:hover,
+.main-navbar .nav-links a.active {
+  color: var(--primary-hover);
+}
+
+.btn-book-a-table {
+  background-color: var(--primary-hover);
+  color: #ffffff !important;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-book-a-table:hover {
+  opacity: 0.9;
+}
+
+.main-navbar .dropdown {
+  position: relative;
+}
+
+.main-navbar .dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg-card);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 8px;
+  list-style: none;
+  min-width: 200px;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.main-navbar .dropdown ul li {
+  position: relative;
+}
+
+.main-navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  justify-content: space-between;
+  color: var(--title-color, #2b2b2b);
+}
+
+.main-navbar .dropdown:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.main-navbar .dropdown .dropdown ul {
+  top: 0;
+  left: -100%;
+  transform: translateX(15px);
+}
+
+.main-navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
