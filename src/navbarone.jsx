@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 function Navbarone() {
   const [activeNav, setActiveNav] = useState("Home");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <>
       <div>
@@ -117,7 +118,7 @@ function Navbarone() {
                 data-bs-target="#mobileNav"
               ></i>
               <div
-                className="offcanvas offcanvas-end custom-mobile-nav"
+                className="offcanvas offcanvas-end mt-4 me-3 custom-mobile-nav"
                 tabIndex="-1"
                 id="mobileNav"
               >
@@ -184,33 +185,50 @@ function Navbarone() {
                         Events
                       </a>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item">
                       <a
-                        className="nav-link p-0 d-flex justify-content-between align-items-center"
+                        className={`nav-link p-0 d-flex justify-content-between align-items-center ${activeNav === "Dropdown" ? "active" : ""}`}
                         href="#"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#submenu"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsDropdownOpen(!isDropdownOpen);
+                          setActiveNav("Dropdown");
+                        }}
                       >
                         Dropdown
                         <span className="dropdown-icon-bg">
-                          <i className="bi bi-chevron-down fs-7"></i>
+                          <i
+                            className={`bi bi-chevron-${isDropdownOpen ? "up" : "down"} fs-7`}
+                          ></i>
                         </span>
                       </a>
-                      <div className="collapse ps-3 pt-2" id="submenu">
+
+                      <div
+                        className={`submenu-collapse ps-3 pt-2 ${isDropdownOpen ? "show" : ""}`}
+                      >
                         <ul className="nav flex-column gap-2">
                           <li className="nav-item">
-                            <a className="nav-link p-0" href="#">
+                            <a
+                              className={`nav-link p-0 ${activeNav === "Option 1" ? "active" : ""}`}
+                              href="#"
+                              onClick={() => setActiveNav("Option 1")}
+                            >
                               Option 1
                             </a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link p-0" href="#">
+                            <a
+                              className={`nav-link p-0 ${activeNav === "Option 2" ? "active" : ""}`}
+                              href="#"
+                              onClick={() => setActiveNav("Option 2")}
+                            >
                               Option 2
                             </a>
                           </li>
                         </ul>
                       </div>
                     </li>
+
                     <li className="nav-item">
                       <a
                         className={`nav-link p-0 ${activeNav === "Contact" ? "active" : ""}`}
