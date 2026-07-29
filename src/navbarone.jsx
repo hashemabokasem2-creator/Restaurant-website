@@ -1,12 +1,27 @@
 import iconone from "./assets/logo.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Navbarone() {
   const [activeNav, setActiveNav] = useState("Home");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div>
+      <header className={`sticky-nav-wrapper ${isScrolled ? "scrolled" : ""}`}>
         <nav className="top-navbar">
           <div className="nav-left d-none d-md-flex">
             <img src={iconone} alt="Logo" className="nav-logo" />
@@ -244,7 +259,7 @@ function Navbarone() {
             </div>
           </nav>
         </div>
-      </div>
+      </header>
     </>
   );
 }
