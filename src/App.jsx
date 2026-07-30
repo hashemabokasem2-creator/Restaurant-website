@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials.jsx";
 import Chefs from "./Chefs.jsx";
 import Formseginin from "./segin-in.jsx";
 import Maptorestaurant from "./Maptorestaurant.jsx";
+import Dining from "./dining.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Chefs />
       <Formseginin />
       <Maptorestaurant />
+      <Dining />
     </>
   );
 }
