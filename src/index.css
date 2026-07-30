@@ -1082,3 +1082,210 @@ h6 {
 .testimonial-card-featured .quote-icon {
   color: #ffffff;
 }
+
+.chef-section-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.chef-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chef-badge {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.chef-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.chef-experience {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.exp-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #222222;
+  max-width: 200px;
+  line-height: 1.3;
+}
+
+.chef-description {
+  color: #666666;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.chef-awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  position: relative;
+  border-left: 3px solid var(--primary-color);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.award-icon {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.award-text {
+  font-weight: 600;
+  color: #222222;
+  font-size: 0.95rem;
+}
+
+.chef-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.decorated-bg {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 120px;
+  height: 120px;
+  background-color: #fff2ee;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.chef-main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.signature-card {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 12px;
+  z-index: 3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature-img {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+.team-section-row {
+  display: flex;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.team-card {
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-img-wrapper {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.06);
+}
+
+.team-info {
+  padding: 0 5px;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.member-role {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+.member-desc {
+  font-size: 0.88rem;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}

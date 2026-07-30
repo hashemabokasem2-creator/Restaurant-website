@@ -6,6 +6,7 @@ import Sectionchef from "./sectionchef.jsx";
 import BackToTop from "./backtotop.jsx";
 import Meals from "./sectionmeals.jsx";
 import Testimonials from "./Testimonials.jsx";
+import Chefs from "./Chefs.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Sectionchef />
       <Meals />
       <Testimonials />
+      <Chefs />
     </>
   );
 }
