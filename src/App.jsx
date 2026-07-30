@@ -5,6 +5,7 @@ import Bookatabel from "./bookatabel.jsx";
 import Sectionchef from "./sectionchef.jsx";
 import BackToTop from "./backtotop.jsx";
 import Meals from "./sectionmeals.jsx";
+import Testimonials from "./Testimonials.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Bookatabel />
       <Sectionchef />
       <Meals />
+      <Testimonials />
     </>
   );
 }
