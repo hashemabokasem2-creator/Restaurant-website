@@ -1502,3 +1502,243 @@ h6 {
   background-color: var(--primary-color);
   color: #ffffff;
 }
+
+.location-section-row {
+  display: flex;
+  justify-content: center;
+}
+
+.location-card {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.location-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.location-subtitle {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.map-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.google-map-iframe {
+  display: block;
+}
+
+.transport-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.transport-grid {
+  display: flex;
+  gap: 15px;
+}
+
+.transport-card {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+}
+
+.transport-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #fff2ee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.transport-icon-box i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.transport-info h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.transport-info p {
+  font-size: 0.78rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 35px 25px;
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  background-color: #fff2ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.contact-icon-box i {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.contact-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.contact-card-text {
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0 0 4px 0;
+}
+
+.contact-card-phone {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.contact-card-note {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #888888;
+}
+
+.hours-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.day-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: start;
+}
+
+.time-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: end;
+}
+
+.time-closed {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #999999;
+  text-align: end;
+}
+
+.action-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-primary-action {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-action:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline-action {
+  width: 100%;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-outline-action:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}

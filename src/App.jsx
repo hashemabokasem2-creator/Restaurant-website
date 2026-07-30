@@ -8,6 +8,7 @@ import Meals from "./sectionmeals.jsx";
 import Testimonials from "./Testimonials.jsx";
 import Chefs from "./Chefs.jsx";
 import Formseginin from "./segin-in.jsx";
+import Maptorestaurant from "./Maptorestaurant.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Testimonials />
       <Chefs />
       <Formseginin />
+      <Maptorestaurant />
     </>
   );
 }
