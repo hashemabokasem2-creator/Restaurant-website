@@ -11,6 +11,7 @@ import Formseginin from "./segin-in.jsx";
 import Maptorestaurant from "./Maptorestaurant.jsx";
 import Dining from "./dining.jsx";
 import Choose from "./Choose.jsx";
+import Bookaservice from "./formss.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Maptorestaurant />
       <Dining />
       <Choose />
+      <Bookaservice />
     </>
   );
 }
