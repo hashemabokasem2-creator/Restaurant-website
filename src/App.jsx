@@ -7,6 +7,7 @@ import BackToTop from "./backtotop.jsx";
 import Meals from "./sectionmeals.jsx";
 import Testimonials from "./Testimonials.jsx";
 import Chefs from "./Chefs.jsx";
+import Formseginin from "./segin-in.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Meals />
       <Testimonials />
       <Chefs />
+      <Formseginin />
     </>
   );
 }
