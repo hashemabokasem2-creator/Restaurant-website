@@ -9,7 +9,7 @@ function Sectionchef() {
     <>
       <section className="container mt-5">
         <div className="row food gap-3">
-          <div className="col-md-5 mb-4 mt-4 ms-5">
+          <div className="col-lg-5 mb-4 mt-4">
             <div className="chef-image-wrapper">
               <img
                 src={imagechef}
@@ -23,7 +23,7 @@ function Sectionchef() {
               </div>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-lg-5">
             <div className="chef-content-wrapper">
               <h2 className="chef-title">Meet Our Executive Chef</h2>
               <p className="chef-subtitle">

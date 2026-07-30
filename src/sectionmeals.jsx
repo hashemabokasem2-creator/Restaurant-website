@@ -90,7 +90,7 @@ function Meals() {
           </div>
         </div>
         <div className="row table">
-          <div className="col-3 texts">
+          <div className="col-md-5 texts">
             <a href="#" className="btn-primary-custom hover-up">
               <span className="download-icon-circle">
                 <i className="bi bi-download"></i>
