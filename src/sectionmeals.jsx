@@ -8,7 +8,7 @@ function Meals() {
   const [activeTab, setActiveTab] = useState("starters");
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="menu">
         <div className="row custom-title-row">
           <div className="col-md-6">
             <div className="section-title">

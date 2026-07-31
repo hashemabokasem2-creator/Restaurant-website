@@ -9,7 +9,7 @@ import chefgrf from "./assets/chef-4.webp";
 function Chefs() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="chefs">
         <div className="row custom-title-row">
           <div className="col-md-6">
             <div className="section-title">

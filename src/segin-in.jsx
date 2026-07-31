@@ -4,7 +4,7 @@ import bigimg from "./assets/showcase-4.webp";
 function Formseginin() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="book-a-table">
         <div className="row reservation-section-row">
           <div className="col-md-6 mt-5">
             <div className="reservation-card">

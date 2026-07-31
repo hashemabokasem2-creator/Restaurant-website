@@ -4,7 +4,7 @@ import events from "./assets/event-2.webp";
 function Dining() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="events">
         <div className="row events-section-row align-items-center">
           <div className="col-md-6 mt-4">
             <div className="events-content-wrapper">

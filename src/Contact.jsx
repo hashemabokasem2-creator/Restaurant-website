@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="contact">
         <div className="row custom-title-row">
           <div className="col-md-6 mt-5">
             <div className="section-title">

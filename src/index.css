@@ -2821,3 +2821,17 @@ footer {
 .designer-link:hover {
   opacity: 0.8;
 }
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.nav-link {
+  color: #000000;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}

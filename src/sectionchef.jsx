@@ -7,7 +7,7 @@ import imagefamile from "./assets/misc-7.webp";
 function Sectionchef() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5"id="about">
         <div className="row food gap-3">
           <div className="col-lg-5 mb-4 mt-4">
             <div className="chef-image-wrapper">

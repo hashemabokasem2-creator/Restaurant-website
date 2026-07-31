@@ -6,7 +6,7 @@ import imagethree from "./assets/main-4.webp";
 function Bookatabel() {
   return (
     <>
-      <section className="container mt-5">
+      <section className="container mt-5" id="home">
         <div className="row justify-content-center align-items-center">
           <div className="col-md-6 col-lg-5 mt-5 pt-5">
             <div className="hero-content">

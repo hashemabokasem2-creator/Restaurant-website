@@ -19,6 +19,10 @@ function Navbarone() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (navName) => {
+    setActiveNav(navName);
+  };
+
   return (
     <>
       <header className={`sticky-nav-wrapper ${isScrolled ? "scrolled" : ""}`}>
@@ -52,24 +56,58 @@ function Navbarone() {
 
             <ul className="nav-links d-none d-lg-flex">
               <li>
-                <a href="#home" className="active">
+                <a
+                  href="#home"
+                  className={`nav-link ${activeNav === "Home" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Home")}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a
+                  href="#about"
+                  className={`nav-link ${activeNav === "About" ? "active" : ""}`}
+                  onClick={() => handleNavClick("About")}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#menu">Menu</a>
+                <a
+                  href="#menu"
+                  className={`nav-link ${activeNav === "Menu" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Menu")}
+                >
+                  Menu
+                </a>
               </li>
               <li>
-                <a href="#book-a-table">Book a Table</a>
+                <a
+                  href="#book-a-table"
+                  className={`nav-link ${activeNav === "Book a Table" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Book a Table")}
+                >
+                  Book a Table
+                </a>
               </li>
               <li>
-                <a href="#chefs">Chefs</a>
+                <a
+                  href="#chefs"
+                  className={`nav-link ${activeNav === "Chefs" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Chefs")}
+                >
+                  Chefs
+                </a>
               </li>
               <li>
-                <a href="#events">Events</a>
+                <a
+                  href="#events"
+                  className={`nav-link ${activeNav === "Events" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Events")}
+                >
+                  Events
+                </a>
               </li>
               <li className="dropdown">
                 <a href="#">
@@ -117,7 +155,13 @@ function Navbarone() {
               </li>
 
               <li>
-                <a href="#contact">Contact</a>
+                <a
+                  href="#contact"
+                  className={`nav-link ${activeNav === "Contact" ? "active" : ""}`}
+                  onClick={() => handleNavClick("Contact")}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
             <div className="d-flex align-items-center gap-3">
@@ -150,7 +194,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Home" ? "active" : ""}`}
                         onClick={() => setActiveNav("Home")}
-                        href="#"
+                        href="#home"
                       >
                         Home
                       </a>
@@ -159,7 +203,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "About" ? "active" : ""}`}
                         onClick={() => setActiveNav("About")}
-                        href="#"
+                        href="#about"
                       >
                         About
                       </a>
@@ -168,7 +212,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Menu" ? "active" : ""}`}
                         onClick={() => setActiveNav("Menu")}
-                        href="#"
+                        href="#menu"
                       >
                         Menu
                       </a>
@@ -177,7 +221,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Book a Table" ? "active" : ""}`}
                         onClick={() => setActiveNav("Book a Table")}
-                        href="#"
+                        href="#book-a-table"
                       >
                         Book a Table
                       </a>
@@ -186,7 +230,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Chefs" ? "active" : ""}`}
                         onClick={() => setActiveNav("Chefs")}
-                        href="#"
+                        href="#chefs"
                       >
                         Chefs
                       </a>
@@ -195,7 +239,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Events" ? "active" : ""}`}
                         onClick={() => setActiveNav("Events")}
-                        href="#"
+                        href="#events"
                       >
                         Events
                       </a>
@@ -240,7 +284,7 @@ function Navbarone() {
                               Dropdown 2
                             </a>
                           </li>
-                            <li className="nav-item">
+                          <li className="nav-item">
                             <a
                               className={`nav-link p-0 ${activeNav === "Option 2" ? "active" : ""}`}
                               href="#"
@@ -249,7 +293,7 @@ function Navbarone() {
                               Dropdown 3
                             </a>
                           </li>
-                            <li className="nav-item">
+                          <li className="nav-item">
                             <a
                               className={`nav-link p-0 ${activeNav === "Option 2" ? "active" : ""}`}
                               href="#"
@@ -266,7 +310,7 @@ function Navbarone() {
                       <a
                         className={`nav-link p-0 ${activeNav === "Contact" ? "active" : ""}`}
                         onClick={() => setActiveNav("Contact")}
-                        href="#"
+                        href="#contact"
                       >
                         Contact
                       </a>
