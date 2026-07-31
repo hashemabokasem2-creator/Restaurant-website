@@ -13,6 +13,7 @@ import Dining from "./dining.jsx";
 import Choose from "./Choose.jsx";
 import Bookaservice from "./formss.jsx";
 import Gallery from "./Gallery.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Choose />
       <Bookaservice />
       <Gallery />
+      <Contact />
     </>
   );
 }
