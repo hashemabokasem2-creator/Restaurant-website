@@ -14,6 +14,7 @@ import Choose from "./Choose.jsx";
 import Bookaservice from "./formss.jsx";
 import Gallery from "./Gallery.jsx";
 import Contact from "./Contact.jsx";
+import Footer from "./footer.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Bookaservice />
       <Gallery />
       <Contact />
+      <Footer />
     </>
   );
 }

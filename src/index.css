@@ -2567,3 +2567,257 @@ h6 {
     gap: 0;
   }
 }
+
+.footer-about {
+  margin-bottom: 30px;
+}
+
+.footer-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.newsletter-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #fff;
+  max-width: 330px;
+}
+
+.newsletter-input {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .newsletter-input {
+    padding: 10px 14px;
+    font-size: 0.875rem;
+  }
+}
+
+.newsletter-input::placeholder {
+  color: #b5b5b5;
+}
+
+.newsletter-btn {
+  background-color: #f16541;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #d95333;
+}
+
+footer {
+  background-color: #fdf8f5;
+}
+
+.footer-links-col {
+  margin-bottom: 30px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background-color: #f16541;
+  border-radius: 2px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 12px;
+}
+
+.footer-links-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  transition: all 0.25 ease;
+}
+
+.link-icon {
+  font-size: 0.75rem;
+  color: #f16541;
+  margin-right: 8px;
+  transition: transform 0.25s ease;
+}
+
+.footer-links-list a:hover {
+  color: #f16541;
+}
+
+.footer-links-list a:hover {
+  transform: translateX(5px);
+}
+
+.footer-links-list a {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.footer-contact-col {
+  margin-bottom: 30px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #f3ebe6;
+  color: #f16541;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.contact-info-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: #f16541;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.footer-bottom {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.copyright-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.copyright-text strong {
+  color: #222;
+}
+
+.footer-legal-links {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-legal-links li {
+  margin-left: 15px;
+}
+
+.footer-legal-links a {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #f16541;
+}
+
+.designer-credits {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.designer-link {
+  color: #f16541;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.designer-link:hover {
+  opacity: 0.8;
+}
