@@ -17,7 +17,7 @@ function Choose() {
           </div>
         </div>
         <div className="row pricing-cards-row align-items-center justify-content-center">
-          <div className="col-md-4">
+          <div className="col-md-4 mt-5">
             <div className="pricing-card side-card">
               <div className="pricing-icon-box">
                 <i className="bi bi-gem"></i>
@@ -53,7 +53,7 @@ function Choose() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 mt-5">
             <div className="pricing-card featured-card">
               <div className="popular-badge">Most Popular</div>
 
@@ -88,7 +88,7 @@ function Choose() {
               <div className="guests-badge">20-120 guests</div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mt-5">
             <div className="pricing-card side-card">
               <div className="pricing-icon-box">
                 <i className="bi bi-heart"></i>
@@ -122,7 +122,7 @@ function Choose() {
           </div>
         </div>
         <div className="row gallery-row">
-          <div className="col-md-3">
+          <div className="col-md-3 mt-4">
             <div className="gallery-card">
               <img src={foimgon} alt="Event Gallery" className="gallery-img" />
               <div className="gallery-overlay">
@@ -130,7 +130,7 @@ function Choose() {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-4">
             <div className="gallery-card featured-gallery-card">
               <img src={foimgtw} alt="Event Gallery" className="gallery-img" />
               <div className="gallery-overlay">
@@ -138,7 +138,7 @@ function Choose() {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mt-4">
             <div className="gallery-card">
               <img src={foimgthr} alt="Event Gallery" className="gallery-img" />
               <div className="gallery-overlay">

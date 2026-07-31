@@ -228,7 +228,7 @@ function Navbarone() {
                               href="#"
                               onClick={() => setActiveNav("Option 1")}
                             >
-                              Option 1
+                              Dropdown 1
                             </a>
                           </li>
                           <li className="nav-item">
@@ -237,7 +237,25 @@ function Navbarone() {
                               href="#"
                               onClick={() => setActiveNav("Option 2")}
                             >
-                              Option 2
+                              Dropdown 2
+                            </a>
+                          </li>
+                            <li className="nav-item">
+                            <a
+                              className={`nav-link p-0 ${activeNav === "Option 2" ? "active" : ""}`}
+                              href="#"
+                              onClick={() => setActiveNav("Option 2")}
+                            >
+                              Dropdown 3
+                            </a>
+                          </li>
+                            <li className="nav-item">
+                            <a
+                              className={`nav-link p-0 ${activeNav === "Option 2" ? "active" : ""}`}
+                              href="#"
+                              onClick={() => setActiveNav("Option 2")}
+                            >
+                              Dropdown 4
                             </a>
                           </li>
                         </ul>

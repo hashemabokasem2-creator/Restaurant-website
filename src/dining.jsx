@@ -6,7 +6,7 @@ function Dining() {
     <>
       <section className="container mt-5">
         <div className="row events-section-row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 mt-4">
             <div className="events-content-wrapper">
               <h2 className="events-title">
                 Exceptional Events &amp; Private Dining
@@ -30,7 +30,7 @@ function Dining() {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-4">
             <div className="event-image-wrapper">
               <img
                 src={events}
